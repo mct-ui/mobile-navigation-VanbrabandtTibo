@@ -575,6 +575,22 @@ a:focus {
     Main navigation of the site
 */
 
+.c-mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s;
+}
+
+.has-mobile-nav .c-mobile-nav{
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .c-nav-trigger {
     display: flex;
     align-items: center;
